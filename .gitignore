@@ -1,0 +1,37 @@
+
+#忽略某些文件
+doc/frotz/
+
+
+/text1
+
+/text2
+
+/text1/
+
+text3/
+
+/text4/
+
+/text6
+
+text6/
+
+text8/text88/
+
+
+# 如果模式的开头或中间（或两者）有一个分隔符，则该模式是相对于特定.gitignore文件本身的目录级别的。
+
+#忽略和.gitignore文件同目录下的text9目录下的text99目录下的所有文件及其文件夹里面的文件 git使用/text9/text99/99.html  或者是 git使用/text9/text99/text999/999.html
+/text9/text99
+
+#同/text9/text99
+text9/text99 
+
+
+#如果模式末尾有分隔符，则模式将只匹配目录，否则模式可以匹配文件和目录。
+
+#例如，模式doc/frotz/匹配doc/frotz目录，但不匹配a/doc/frotz目录；
+#但是frotz/匹配frotz和a/frotz（所有路径都是相对于.gitignore文件的）。
+
+/text11/text111/!111.css
