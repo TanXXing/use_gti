@@ -35,3 +35,8 @@ text9/text99
 #但是frotz/匹配frotz和a/frotz（所有路径都是相对于.gitignore文件的）。
 
 /text11/text111/!111.css
+
+
+/text12/
+
+!12.html
